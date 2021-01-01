@@ -7,9 +7,7 @@ import retrofit2.Converter;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 
-/**
- * Created by zrh on 2016/4/22.
- */
+
 public class HttpRequester extends HttpBase {
     private static HttpRequester requester = new HttpRequester(HJGHttp.app);
 

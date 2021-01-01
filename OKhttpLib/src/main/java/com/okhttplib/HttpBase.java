@@ -23,13 +23,11 @@ public abstract class HttpBase {
     public static PlainTextConverterFactory TEXT = PlainTextConverterFactory.create();
     public static GsonConverterFactory GSON = GsonConverterFactory.create(DataUtil.gson);
     private final SharedPrefsCookiePersistor spcp;
-    //    private final PersistentCookieJar cookieJar;
     public Context context;
 
     public HttpBase(Context context) {
         this.context = context;
         spcp = new SharedPrefsCookiePersistor(context);
-//        cookieJar = new PersistentCookieJar(new SetCookieCache(), spcp);
         initHttp();
     }
 

@@ -16,14 +16,6 @@ public abstract class BaseBiz {
         requester = HttpRequester.get();
     }
 
-    public void clearCookies() {
-//        getPersistentCookieJar().clear();
-    }
-
-    public PersistentCookieJar getPersistentCookieJar() {
-        return requester.getCookieJar();
-    }
-
     /**
      * 以Gson的解析方式，通过Observable返回
      *
